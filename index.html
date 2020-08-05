@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+    <title>Reina Orikasa | Blog</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <h1>Reina Orikasa's Blog <i class="fas fa-keyboard"></i></h1>
+      <ul>
+        <li>
+          <a
+            href="https://myanimelist.net/profile/Reina_Orikasa"
+            target="_blank"
+          >
+            MAL <i class="fas fa-list-ul"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://reina-orikasa.github.io/songList/" target="_blank">
+            Music <i class="fas fa-headphones-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#"> GitHub <i class="fab fa-github-alt"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Navigation <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li>
+              <button onclick="scrollToId(`2020`)" class="btn">
+                <p class="strong">2020</p>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <div class="container">
+        <div class="intro-container">
+          <div class="intro-content">
+            <h2>Welcome</h2>
+            <p>
+              Mariners baseball, travel, and everything else in between.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="blog">
+      <div class="container py-2">
+        <section class="blog-container">
+          <div class="month-nav">
+            <h2>Sort by Year</h2>
+            <button onclick="scrollToId(`2020`)" class="btn">
+              <h3>2020</h3>
+            </button>
+            <ul>
+              <li>
+                <button onclick="scrollToId(`aug-2020`)" class="btn">
+                  <p class="strong">August</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <h2 id="2020">Year: 2020</h2>
+          <h3 id="aug-2020">Month: August</h3>
+          <span>
+            <a href="#intro">Top of Page</a> <i class="fas fa-chevron-up"> </i>
+          </span>
+          <article class="card">
+            <div>
+              <h2>Hello World!</h2>
+              <p>August 4, 2020</p>
+              <div>
+                <p>
+                  Stuck at home with no clear date when everything will return
+                  to normal again. That's been the story for the past few months
+                  as time continues its march towards the end of 2020. I miss my
+                  favorite Japanese restuarant and their bento boxes for $13.25.
+                </p>
+                <p>
+                  It's going to be a while before I start traveling again. With
+                  how many countries are banning US passport holders it'll
+                  probably be until a working vaccine is out.
+                </p>
+                <div class="blog-img">
+                  <img src="img/IMG_0149.JPG" alt="Paris Photo" />
+                  <i>Looking forward to traveling the world again.</i>
+                </div>
+                <p>
+                  Looking on the somewhat bright side, Mariners baseball has
+                  returned. 12 games through, a 4-8 record and a team that
+                  doesn't know whether it wants to end the 18-year postseason
+                  drought or FUBAR for Kumar. Starting rotation looking good,
+                  everything else, not so good.
+                </p>
+                <p>
+                  Today's thought: Welcome to the Felix experience Ms starting
+                  pitchers. Enjoy getting zero run support while pitching decent
+                  or getting your win taken away by the bullpen if the offense
+                  does score a run or two.
+                </p>
+                <p>
+                  Song currently playing: Green Day - Wake Me Up When September
+                  Ends
+                </p>
+                <p>
+                  It's only the beginning of August, but from the looks of it,
+                  waking up when September ends might be too early.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-container">
+          <div>
+            <p>Reina Orikasa</p>
+            <p>2020</p>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a
+                  href="https://myanimelist.net/profile/Reina_Orikasa"
+                  target="_blank"
+                >
+                  MAL
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://reina-orikasa.github.io/songList/"
+                  target="_blank"
+                >
+                  Music
+                </a>
+              </li>
+              <li><a href="#">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

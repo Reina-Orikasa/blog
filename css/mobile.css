@@ -1,0 +1,13 @@
+#main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro .intro-container {
+  grid-template-columns: 1fr;
+}
+
+#blog .blog-container {
+  margin: 1rem;
+  padding: 1rem;
+}
