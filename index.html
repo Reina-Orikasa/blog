@@ -67,17 +67,49 @@
       <div class="container py-2">
         <section class="blog-container">
           <div class="month-nav">
-            <h2>Sort by Year</h2>
-            <button onclick="scrollToId(`2020`)" class="btn">
-              <h3>2020</h3>
+            <button class="btn" onclick="hideDiv()">
+              Sort by Year <i class="fas fa-chevron-down"></i>
             </button>
-            <ul>
-              <li>
-                <button onclick="scrollToId(`aug-2020`)" class="btn">
-                  <p class="strong">August</p>
-                </button>
-              </li>
-            </ul>
+            <div class="hidden">
+              <div class="flexbox-columns">
+                <div class="row border-top">
+                  <div class="column-1">
+                    <button onclick="scrollToId(`2020`)" class="btn">
+                      <h3>2020</h3>
+                    </button>
+                  </div>
+                  <div class="column-2">
+                    <ul>
+                      <!-- <li>
+                        <button onclick="scrollToId(`dec-2020`)" class="btn">
+                          <p class="strong">December</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button onclick="scrollToId(`nov-2020`)" class="btn">
+                          <p class="strong">November</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button onclick="scrollToId(`oct-2020`)" class="btn">
+                          <p class="strong">October</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button onclick="scrollToId(`sep-2020`)" class="btn">
+                          <p class="strong">September</p>
+                        </button>
+                      </li> -->
+                      <li>
+                        <button onclick="scrollToId(`aug-2020`)" class="btn">
+                          <p class="strong">August</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <h2 id="2020">Year: 2020</h2>
           <h3 id="aug-2020">Month: August</h3>

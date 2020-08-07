@@ -77,12 +77,38 @@ p {
 }
 
 .btn:hover {
-  background-color: #444;
   color: coral;
 }
 
 .strong {
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.flexbox-columns .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.flexbox-columns .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-columns .column-1 {
+  margin-right: 2rem;
+}
+
+.border-top {
+  border-top: #fff 1px solid;
 }
 
 /* Navigation */
@@ -202,8 +228,17 @@ p {
   font-size: 2rem;
 }
 
-.month-nav p {
+.month-nav h3 {
+  padding-right: 1rem;
+}
+
+.month-nav p,
+.month-nav button {
   font-size: 1.2rem;
+}
+
+.month-nav button {
+  width: fit-content;
 }
 
 .month-nav {
@@ -218,9 +253,14 @@ p {
 
 #main-footer {
   background: #444;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 2rem 0.8rem;
   margin-top: 2rem;
+}
+
+#main-footer a:hover {
+  text-decoration: underline;
+  color: coral;
 }
 
 #main-footer .footer-container {
