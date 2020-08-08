@@ -5,9 +5,9 @@ function scrollToId(id) {
 
 function hideDiv() {
   var id = document.querySelector('.hidden');
-  if (id.style.display === 'none') {
-    id.style.display = 'block';
-  } else {
+  if (id.style.display === 'block') {
     id.style.display = 'none';
+  } else {
+    id.style.display = 'block';
   }
 }

@@ -181,6 +181,7 @@ p {
 #intro {
   color: #fff;
   position: relative;
+  font-size: 1.5rem;
 }
 
 #intro:before {
