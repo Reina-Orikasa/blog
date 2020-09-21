@@ -30,7 +30,7 @@ p {
 
 /* Utlities  */
 .container {
-  max-width: 600px;
+  max-width: 750px;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;

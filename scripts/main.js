@@ -1,10 +1,10 @@
 function scrollToId(id) {
-  var elementPosition = document.getElementById(id).offsetTop;
+  const elementPosition = document.getElementById(id).offsetTop;
   window.scrollTo(0, elementPosition - 75);
 }
 
 function hideDiv() {
-  var id = document.querySelector('.hidden');
+  let id = document.querySelector('.hidden');
   if (id.style.display === 'block') {
     id.style.display = 'none';
   } else {
