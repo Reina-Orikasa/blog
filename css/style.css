@@ -212,6 +212,19 @@ p {
   font-size: 1.1rem;
 }
 
+#marinersDrought {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: #fff 1px solid;
+}
+
+#marinersDrought #pain-duck {
+  height: 40%;
+  width: 40%;
+  margin-top: 1rem;
+}
+
 #blog .blog-container {
   display: grid;
   grid-template-columns: 1fr;
