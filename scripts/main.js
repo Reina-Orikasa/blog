@@ -24,3 +24,27 @@ function navBarFunction() {
     navBar.style.background = 'none';
   }
 }
+
+const div = document.getElementById('marinersDrought');
+
+const divsToAnim = document.querySelectorAll('.anim');
+
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: '-75px',
+};
+
+window.addEventListener('scroll', navBarFunction);
+
+observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.style.animation = 'anim1 2s forwards ease-out';
+    }
+  });
+}, options);
+
+divsToAnim.forEach((div) => {
+  observer.observe(div);
+});
