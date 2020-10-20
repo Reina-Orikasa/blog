@@ -17,10 +17,10 @@ const navLocation = navBar.offsetTop;
 
 function navBarFunction() {
   if (window.pageYOffset > navLocation) {
-    navBar.style.transition = '1s ease-in';
+    navBar.style.transition = '0.5s ease-in';
     navBar.style.background = '#444';
   } else {
-    navBar.style.transition = '1s ease-in';
+    navBar.style.transition = '0.5s ease-in';
     navBar.style.background = 'none';
   }
 }
@@ -32,7 +32,7 @@ const divsToAnim = document.querySelectorAll('.anim');
 const options = {
   root: null,
   threshold: 0,
-  rootMargin: '-75px',
+  rootMargin: '-50px',
 };
 
 window.addEventListener('scroll', navBarFunction);
@@ -40,7 +40,7 @@ window.addEventListener('scroll', navBarFunction);
 observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = 'anim1 2s forwards ease-out';
+      entry.target.style.animation = 'anim1 1s forwards ease-out';
     }
   });
 }, options);

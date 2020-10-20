@@ -20,7 +20,8 @@
   grid-template-columns: 1fr;
 }
 
-#blog .blog-container {
+#blog .blog-container,
+#marinersDrought {
   margin: 1rem;
   padding: 1rem;
 }
