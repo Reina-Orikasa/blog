@@ -40,7 +40,7 @@ window.addEventListener('scroll', navBarFunction);
 observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = 'anim1 1s forwards ease-out';
+      entry.target.style.animation = 'anim1 350ms forwards ease-in';
     }
   });
 }, options);
